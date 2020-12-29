@@ -20,7 +20,6 @@ public class SSlRedirections_Class extends PropertyFile
 	{			
 		System.setProperty("webdriver.chrome.driver", "D:\\Durga\\chromedriver_win32\\chromedriver.exe");
         driver = new ChromeDriver();	
-        ((RemoteWebDriver) driver).setLogLevel(Level.INFO);
 		driver.manage().deleteAllCookies();
 		driver.get(url);
 		driver.manage().window().maximize();
